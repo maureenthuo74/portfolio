@@ -1,0 +1,34 @@
+body{
+  font-size:1.2em;  
+}
+
+nav{
+    background-color: #12005e;
+    line-height: 3em;
+}
+
+nav a{
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+footer{
+    background-color: #7c43bd;
+}
+
+footer ul{
+    list-style-type: none;
+
+}
+
+footer a{
+    color: #fff;
+}
+
+footer p{
+    color: #fff;
+    text-align: center;
+}
