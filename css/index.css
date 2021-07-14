@@ -1,34 +1,45 @@
-body{
-  font-size:1.2em;  
+*
+margin: 0;
+
+body {
+  font-size: 1.2em;
 }
 
-nav{
-    background-color: #12005e;
-    line-height: 3em;
+nav {
+  background-color: #004c8b;
+  line-height: 3em;
 }
 
-nav a{
-    color: #fff;
+nav a {
+  color: #fff;
 }
 
-a{
-    text-decoration: none;
+header {
+    background-color: #27d2fd;
 }
 
-footer{
-    background-color: #7c43bd;
+a {
+  text-decoration: none;
 }
 
-footer ul{
-    list-style-type: none;
-
+footer {
+  background-color: #0277bc;
 }
 
-footer a{
-    color: #fff;
+footer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
 }
 
-footer p{
-    color: #fff;
-    text-align: center;
+footer ul li{
+    margin-right: 0.8em;
+}
+footer a {
+  color: #fff;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
 }
