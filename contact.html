@@ -9,105 +9,117 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <script src="./css/fontawesome.js" crossorigin="anonymous"></script>
+
     <title>Maureen Thuo: Contact</title>
   </head>
   <body>
     <!--Navigation Bar Section-->
-    <nav>
-      <a href="./Maureen Thuo.html">Maureen Thuo</a>
-      <a href="./projects.html">Projects</a>
-      <a href="./services.html">Services</a>
-      <a href="./about.html">About</a>
-      <a href="./blog.html">Blog</a>
-      <a href="./contact.html">Contact</a><hr>
+    <nav class="navbar">
+      <a href="" class="nav-link">MAUREEN THUO</a>
+       <div>
+      <a href="./projects.html" class="nav-link"><i class="fas fa-tasks"></i> Projects</a>
+      <a href="./services.html" class="nav-link"><i class="fas fa-cogs"></i> Services</a>
+      <a href="./about.html" class="nav-link"><i class="fas fa-address-card"></i> About</a>
+      <a href="./blog.html" class="nav-link"><i class="fas fa-blog"></i> Blog</a>
+      <a href="./contact.html" class="nav-link"><i class="fas fa-envelope-open-text"></i> Contact</a>
+      <a href="https://drive.google.com/file/d/1IFNBAMPP0G3S84wHaLagIxM3G6aFQv7v/view?usp=sharing" class="nav-link"><i class="fas fa-file"></i> Resume</a>
+       </div>
     </nav>
+
     <!--Jumbotron Section-->
     <header>
-    <h1>Drop me a line</h1>
-    </header>
-    <img src="images/contact.jpg" , width="300" height="300" alt="contact image" />
+      <div class="container">
+        <img src="images/contact.jpg" , width="300" height="300" alt="contact image" />
+    <h1>LET'S TALK. BUT YOU FIRST.</h1>
+    <p> 
+      If you’d like to chat about a design please fill in the form
+      below and I’ll get back within 1-2 days.
+    </p>
+    
     <!--Main Section-->
     <main>
-      <div class="form-control row">
-        <label for="Email*" class="col-3">Email*</label>
-        <br>
+      <p>
+        <label for="">Email*</label><br/>
         <input
-          type="text"
-          class="form-input col-6"
+          type="email"
+          class="form-input"
           name="email"
           id="email"
+          size="30"
           placeholder="Your email"
         />
-      </div>
-      <br>
-
-      <div class="form-control row">
-        <label for="Name" class="col-3">Name*</label>
-        <br>
+      </p>
+      <p>
+        <label for="">Name*</label><br/>
         <input
           type="text"
-          class="form-input col-6"
+          class="form-input"
           name="name"
           id="name"
+          size="30"
           placeholder="Your name"
         />
+      </p>
+      <div class="row">
+        <label class="mr-3" for="phone">Tel.</label>
+        <input type="tel" class="form-input" name="code" id="code" size="4" placeholder="+254" />
+        <input type="tel" class="form-input ml-3" name="phone" id="phone" size="10" placeholder="07********" />
       </div>
-      <br>
-
-      <div class="form-control row">
-        <label for="tel" class="col-3">Tel.</label>
-        <input type="tel" class="form-input col-1" name="tel" id="tel" placeholder="+254" />
-        <input type="tel" class="form-input col-4" name="tel" id="tel" placeholder="07********" />
+      <p>
+      <label for="means">Preferred means:</label>
+      <div class="row">
+      <input type="radio" name="contact" id="mobile" />Tel.
+      <input type="radio" name="contact" id="mail" />Email
       </div>
-      <br>
-
-      <label for="Preferred means" class="col-3">Preferred means:</label>
-      <input type="radio" name="Tel." id="Tel."><label for="Tel." class="col-3">Tel.</label>
-      <input type="radio" name="Email" id="Email"><label for="Email" class="col-3">Email</label>
-      <br><br>
-
-      <form action="/action_page.html">
-        <label for="Product">Product*</label><br>
-        <select name="product" id="product">
-        <br>
+    </p>
+    <p>
+      <label for="Product">Product*</label><br/>
+       <select name="product" id="product" class="form-input">
         <option value="InDesign">Photoshop</option>
         <option value="Ilustrator">Proofreading</option>
         <option value="Photoshop">Data Entry</option>
         </select>
-        
-        <br><br>
-      </form>
-
-      <label for="Message" class="col-3">Message*</label>
-      <div class="form-control row">
+      </p>
+      <p>
+      <label for="">Message*</label><br/>
         <textarea
-          cols="15"
-          rows="4"
-          class="form-input col-6"
+          rows="5"
+          class="form-input"
           name="message"
           id="message">
         </textarea>
-        
-      </div>
-      <br>
-
-      <input type="checkbox" name="Subscribe to news and offers" id="Subscribe to news and offers"><label for="Subscribe to news and offers" class="col-3">Subscribe to news and offers</label>
-      <br><br>
-      
-      <button class="button button-block"/>Send Message</button><hr>
-    </main>
+      </p>
+      <p>
+      <input type="checkbox" name="offers" id="offers"/>
+      <label for="offers">Subscribe to news and offers</label>
+     </p>
+     <p>
+      <input class="btn" type="submit" value="Send Message" />
+    </p>
+  </form>
+</div>
+</div>
+</hr>
+</main>
+</div>
+</header>
 
     <!--Footer Section-->
     <footer>
+      <div id="bottom">
       <ul>
-        <li><a href="https://github.com/maureenthuo74/">Github</a></li>
-        <li><a href="https://www.linkedin.com/in/maureenthuo4aa27a149/">LinkedIn</a></li>
-        <li><a href="https://www.instagram.com/snucatn/">Instagram</a></li>
-        <li><a href="https://twitter.com/thuo_maureen">Twitter</a></li>
+        <li><a href="https://github.com/maureenthuo74/"><i class="fab fa-github fa-2x"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/maureenthuo4aa27a149/"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
+        <li><a href="https://www.instagram.com/snucatn/"><i class="fab fa-instagram fa-2x"></i></a></li>
+        <li><a href="https://twitter.com/thuo_maureen"><i class="fab fa-twitter fa-2x"></i></a></li>
       </ul>
+      <p>
+        &copy;2021.All Rights Reserved.&trade;<a href="index.html">Maureen Thuo</a>
+      </p>
+    </div>
     </footer>
-    <p>&copy;2021.All Rights Reserved.&trade;<a href="index.html">Maureen Thuo</a></p><hr>
   </body>
 </html>

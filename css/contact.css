@@ -4,6 +4,7 @@ margin: 0;
 body {
   font-size: 1.2em;
   justify-content:left;
+  background-color: #4087fa;
 }
 
 .container {
@@ -21,32 +22,35 @@ body {
   justify-content: space-between;
 }
 
+.navbar-toggler {
+  border-color: transparent;
+  display: none;
+}
+
 .nav-link {
   color: #fff;
   margin-right: 0.5rem;
 }
 
-.nav-link:hover {
-  color: black;
-  background: white;
-}
-
 header {
-    background-color: #4087fa;
+   background-color: #4087fa;
+   margin: 0;
 }
 
-a {
-  color: #fff;
-  text-decoration: none;
-}
 
 main {
   flex-grow: 1;
-  margin: 0;
+  background-color: #4087fa;
+}
+
+a {
+  text-decoration: none;
 }
 
 footer {
   background-color: #0745b8;
+  margin: 0%;
+  color: #ffffff;
 }
 
 footer ul {
@@ -58,6 +62,7 @@ footer ul {
 footer ul li{
     margin-right: 0.8em;
 }
+
 footer a {
   color: #fff;
 }
