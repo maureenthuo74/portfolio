@@ -282,6 +282,7 @@ footer p {
 
 .animated {
   overflow: hidden;
+  height: calc(1fr - var(--lottie-player-toolbar-height));
 }
 
 @media screen and (max-width: 776px) {
