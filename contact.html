@@ -9,39 +9,56 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/contact.css" />
     <script src="./css/fontawesome.js" crossorigin="anonymous"></script>
-
+     
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Maureen Thuo: Contact</title>
   </head>
+
   <body>
     <!--Navigation Bar Section-->
     <nav class="navbar">
-      <a href="" class="nav-link">MAUREEN THUO</a>
-       <div>
-      <a href="./projects.html" class="nav-link"><i class="fas fa-tasks"></i> Projects</a>
-      <a href="./services.html" class="nav-link"><i class="fas fa-cogs"></i> Services</a>
-      <a href="./about.html" class="nav-link"><i class="fas fa-address-card"></i> About</a>
-      <a href="./blog.html" class="nav-link"><i class="fas fa-blog"></i> Blog</a>
-      <a href="./contact.html" class="nav-link"><i class="fas fa-envelope-open-text"></i> Contact</a>
-      <a href="https://drive.google.com/file/d/1IFNBAMPP0G3S84wHaLagIxM3G6aFQv7v/view?usp=sharing" class="nav-link"><i class="fas fa-file"></i> Resume</a>
-       </div>
-    </nav>
+      <a href="index.html" class="navbar-brand active">Maureen Thuo</a>
+      <button id="navbarToggler" class="navbar-toggler">
+        <i class="fas fa-bars fa-2x"></i>
+      </button>
+
+    <div class="navbar-collapse" id="navbarContent">
+      <a href="./projects.html"><i class="fas fa-tasks"></i> Projects</a>
+      <a href="./services.html"><i class="fas fa-cogs"></i> Services</a>
+      <a href="./about.html"><i class="fas fa-address-card"></i> About</a>
+      <a href="./blog.html"><i class="fas fa-blog"></i> Blog</a>
+      <a href="./contact.html"><i class="fas fa-envelope-open-text"></i> Contact</a>
+      <a class="b" href="https://drive.google.com/file/d/1IFNBAMPP0G3S84wHaLagIxM3G6aFQv7v/view?usp=sharing"><i class="fas fa-file"></i> Resume</a>
+    </div>
+   </nav>
 
     <!--Jumbotron Section-->
     <header>
       <div class="container">
-        <img src="images/contact.jpg" , width="300" height="300" alt="contact image" />
+        <section class="hero row">
+          <div class="col">
+   
     <h1>LET'S TALK. BUT YOU FIRST.</h1>
     <p> 
       If you’d like to chat about a design please fill in the form
       below and I’ll get back within 1-2 days.
     </p>
+        </div>
+      </section>
+     </div>
+    </header>
     
     <!--Main Section-->
-    <main>
-      <p>
+    <main class="container">
+     <div class="box box_shadow">
+      <img src="images/profile-removebg.png" width="100" height="100" alt="contact image" class="shape"/>
+     <div class="card-header text-center"></div>
+     <div class="card-body">
+      <form action=""> 
+       <p>
         <label for="">Email*</label><br/>
         <input
           type="email"
@@ -51,7 +68,7 @@
           size="30"
           placeholder="Your email"
         />
-      </p>
+       </p>
       <p>
         <label for="">Name*</label><br/>
         <input
@@ -63,16 +80,30 @@
           placeholder="Your name"
         />
       </p>
-      <div class="row">
+    <div class="row">
         <label class="mr-3" for="phone">Tel.</label>
-        <input type="tel" class="form-input" name="code" id="code" size="4" placeholder="+254" />
-        <input type="tel" class="form-input ml-3" name="phone" id="phone" size="10" placeholder="07********" />
-      </div>
-      <p>
+        <input 
+          type="tel" 
+          class="form-input" 
+          name="code" 
+          id="code" 
+          size="4" 
+          placeholder="+254" 
+          />
+        <input 
+          type="tel" 
+          class="form-input ml-3" 
+          name="phone" 
+          id="phone" 
+          size="10" 
+          placeholder="07********" 
+          />
+    </div>
+    <p>
       <label for="means">Preferred means:</label>
       <div class="row">
-      <input type="radio" name="contact" id="mobile" />Tel.
-      <input type="radio" name="contact" id="mail" />Email
+        <input type="radio" name="contact" id="mobile" />Tel.
+        <input type="radio" name="contact" id="mail" />Email
       </div>
     </p>
     <p>
@@ -81,45 +112,39 @@
         <option value="InDesign">Photoshop</option>
         <option value="Ilustrator">Proofreading</option>
         <option value="Photoshop">Data Entry</option>
-        </select>
-      </p>
-      <p>
+       </select>
+    </p>
+    <p>
       <label for="">Message*</label><br/>
-        <textarea
+      <textarea
           rows="5"
-          class="form-input"
-          name="message"
-          id="message">
-        </textarea>
-      </p>
-      <p>
+          cols="30"
+          class="form-control b box-shadow">
+      </textarea>
+    </p>
+    <p>
       <input type="checkbox" name="offers" id="offers"/>
       <label for="offers">Subscribe to news and offers</label>
-     </p>
-     <p>
+    </p>
+    <p>
       <input class="btn" type="submit" value="Send Message" />
     </p>
-  </form>
+    </form>
+  </div>
 </div>
-</div>
-</hr>
 </main>
-</div>
-</header>
 
     <!--Footer Section-->
     <footer>
-      <div id="bottom"><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-      <ul>
-        <li><a href="https://github.com/maureenthuo74/"><i class="fab fa-github fa-2x"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/maureenthuo4aa27a149/"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
-        <li><a href="https://www.instagram.com/snucatn/"><i class="fab fa-instagram fa-2x"></i></a></li>
-        <li><a href="https://twitter.com/thuo_maureen"><i class="fab fa-twitter fa-2x"></i></a></li>
-      </ul>
-      <p>
+      <div class="social">
+        <a href="https://github.com/maureenthuo74/"><i class="fab fa-github fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/maureenthuo4aa27a149/"><i class="fab fa-linkedin-in fa-2x"></i></a>
+        <a href="https://www.instagram.com/snucatn/"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://twitter.com/thuo_maureen"><i class="fab fa-twitter fa-2x"></i></a>
+      </div>
+      <p class="text-center">
         &copy;2021.All Rights Reserved.&trade;<a href="index.html">Maureen Thuo</a>
       </p>
-    </div>
     </footer>
   </body>
 </html>

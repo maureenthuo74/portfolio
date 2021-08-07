@@ -11,68 +11,72 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/index.css" />
-   
+    <meta name="description" content="Maureen Thuo: Graphic Designer portfolio"/>
+    <link rel="stylesheet" href="./css/main.css" />
+    
     <script src="./css/fontawesome.js" crossorigin="anonymous"></script>
-    <title>Maureen Thuo: Portfolio</title>
+    <title>Maureen Thuo: Homepage</title>
   </head>
-  <body>
-    <div class="container">
 
+  <body>
     <!--Navigation Bar Section-->
     <nav class="navbar">
-      <a href="" class="nav-link">MAUREEN THUO</a>
-       <div>
-      <a href="./projects.html" class="nav-link"><i class="fas fa-tasks"></i> Projects</a>
-      <a href="./services.html" class="nav-link"><i class="fas fa-cogs"></i> Services</a>
-      <a href="./about.html" class="nav-link"><i class="fas fa-address-card"></i> About</a>
-      <a href="./blog.html" class="nav-link"><i class="fas fa-blog"></i> Blog</a>
-      <a href="./contact.html" class="nav-link"><i class="fas fa-envelope-open-text"></i> Contact</a>
-      <a href="https://drive.google.com/file/d/1IFNBAMPP0G3S84wHaLagIxM3G6aFQv7v/view?usp=sharing" class="nav-link"><i class="fas fa-file"></i> Resume</a>
-       </div>
-    </nav>
+      <a href="index.html" class="navbar-brand active">Maureen Thuo</a>
+      <button id="navbarToggler" class="navbar-toggler">
+        <i class="fas fa-bars fa-2x"></i>
+      </button>
+     <div class="navbar-collapse" id="navbarContent">
+      <a href="./index.html"><i class="fas fa-home"></i> Home</a> 
+      <a href="./projects.html"><i class="fas fa-tasks"></i> Projects</a>
+      <a href="./services.html"><i class="fas fa-cogs"></i> Services</a>
+      <a href="./about.html"><i class="fas fa-address-card"></i> About</a>
+      <a href="./blog.html"><i class="fas fa-blog"></i> Blog</a>
+      <a href="./contact.html"><i class="fas fa-envelope-open-text"></i> Contact</a>
+      <a class="b" href="https://drive.google.com/file/d/1IFNBAMPP0G3S84wHaLagIxM3G6aFQv7v/view?usp=sharing"><i class="fas fa-file"></i> Resume</a>
+    </div>
+   </nav>
+
     <!--Jumbotron Section-->
-    <header>
-      <img src="images/profile.jpg" , width="300" height="300" alt="profile image" />
-      <h1>Hi, am Maureen Thuo</h1>
-      <p>
-        I love designing and exploring new graphic designs. If you are
-        interested then you can always reach out to me on my website;
-        www.Maureen Empire.com
-      </p>
+    <header class="container">
+      <section class="hero row">
+        <div class="col">
+       <h1>Hi, am Maureen Thuo</h1>
+       <p>
+         I love <strong>designing </strong> and exploring new <em>graphic designs </em>with over 3
+         years experience creating high end designs.
+        </p>
+        <a href="projects.html" class="btn">My projects</a>
+        </div>
+    <div class="col">
+        <img src="images/profile-removebg.png" width="300" height="300" alt="profile image" />    
+    </div>
+    </section>
+    </div>
     </header>
 
     <!--Main Section-->
-    <main>
-      <section class="featured-projects">
-        <h2>Featured Projects</h2>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
+    <main class="container">
+      <section class="row">
+        <h2 class="text-center">Featured Projects</h2>
       </section>
-      <section class="testimonials">
-        <h2>Testimonials</h2>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-      </section>
-      <section class="faqs">
-        <h2>Frequently asked questions</h2>
+      <section class="row projects">
+        <div class="col-3 box_shadow"><a href="project.html"><img src="images/project1.PNG" width="300" height="300"/></a></div>
+        <div class="col-3 box_shadow"><a href="project.html"><img src="images/project2.PNG" width="300" height="300"/></a></div>
+        <div class="col-3 box_shadow"><a href="project.html"><img src="images/project3.PNG" width="300" height="300"/></a></div>
       </section>
     </main>
 
     <!--Footer Section-->
     <footer>
-      <ul>
-        <li><a href="https://github.com/maureenthuo74/"><i class="fab fa-github fa-2x"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/maureenthuo4aa27a149/"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
-        <li><a href="https://www.instagram.com/snucatn/"><i class="fab fa-instagram fa-2x"></i></a></li>
-        <li><a href="https://twitter.com/thuo_maureen"><i class="fab fa-twitter fa-2x"></i></a></li>
-      </ul>
-      <p>
+      <div class="social">
+        <a href="https://github.com/maureenthuo74/"><i class="fab fa-github fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/maureenthuo4aa27a149/"><i class="fab fa-linkedin-in fa-2x"></i></a>
+        <a href="https://www.instagram.com/snucatn/"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://twitter.com/thuo_maureen"><i class="fab fa-twitter fa-2x"></i></a>
+    </div>
+      <p class="text-center">
         &copy;2021.All Rights Reserved.&trade;<a href="index.html">Maureen Thuo</a>
       </p>
     </footer>
-   </div>
   </body>
 </html>

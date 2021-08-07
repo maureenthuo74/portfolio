@@ -10,7 +10,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/projects.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <script src="./css/fontawesome.js" crossorigin="anonymous"></script>
 
     <title>Maureen Thuo: Projects</title>
@@ -18,29 +18,50 @@
   <body>
     <!--Navigation Bar Section-->
     <nav class="navbar">
-      <a href="" class="nav-link">MAUREEN THUO</a>
-       <div>
-      <a href="./projects.html" class="nav-link"><i class="fas fa-tasks"></i> Projects</a>
-      <a href="./services.html" class="nav-link"><i class="fas fa-cogs"></i> Services</a>
-      <a href="./about.html" class="nav-link"><i class="fas fa-address-card"></i> About</a>
-      <a href="./blog.html" class="nav-link"><i class="fas fa-blog"></i> Blog</a>
-      <a href="./contact.html" class="nav-link"><i class="fas fa-envelope-open-text"></i> Contact</a>
-      <a href="https://drive.google.com/file/d/1IFNBAMPP0G3S84wHaLagIxM3G6aFQv7v/view?usp=sharing" class="nav-link"><i class="fas fa-file"></i> Resume</a>
-       </div>
+      <a href="index.html" class="navbar-brand active">Maureen Thuo</a>
+      <button id="navbarToggler" class="navbar-toggler">
+        <i class="fas fa-bars fa-2x"></i>
+      </button>
+    <div class="navbar-collapse" id="navbarContent">
+      <a href="./projects.html"><i class="fas fa-tasks"></i> Projects</a>
+      <a href="./services.html"><i class="fas fa-cogs"></i> Services</a>
+      <a href="./about.html"><i class="fas fa-address-card"></i> About</a>
+      <a href="./blog.html"><i class="fas fa-blog"></i> Blog</a>
+      <a href="./contact.html"><i class="fas fa-envelope-open-text"></i> Contact</a>
+      <a class="b" href="https://drive.google.com/file/d/1IFNBAMPP0G3S84wHaLagIxM3G6aFQv7v/view?usp=sharing"><i class="fas fa-file"></i> Resume</a>
+     </div>
     </nav>
-
+    
+    <!--Jumbotron Section-->
+    <header>
+      <div class="container">
+        <section class="hero row">
+          <div class="col">        
     <h1>My Projects</h1>
     <p>For over 5 years I’ve been designing and creating graphic designs. Below are some of my favourites.</p>
+           </div>
+        </section>
+      </div>
+    </header>
+
+    <!--Main Section-->
+    <main>
+      <section class="row projects">
+        <div class="col-3 box_shadow"><a href="project.html"><img src="images/project1.PNG" width="300" height="300"/></a></div>
+        <div class="col-3 box_shadow"><a href="project.html"><img src="images/project2.PNG" width="300" height="300"/></a></div>
+        <div class="col-3 box_shadow"><a href="project.html"><img src="images/project3.PNG" width="300" height="300"/></a></div>
+      </section>
+    </main>
 
     <!--Footer Section-->
     <footer>
-      <ul>
-        <li><a href="https://github.com/maureenthuo74/"><i class="fab fa-github fa-2x"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/maureenthuo4aa27a149/"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
-        <li><a href="https://www.instagram.com/snucatn/"><i class="fab fa-instagram fa-2x"></i></a></li>
-        <li><a href="https://twitter.com/thuo_maureen"><i class="fab fa-twitter fa-2x"></i></a></li>
-      </ul>
-      <p>
+      <div class="social">
+        <a href="https://github.com/maureenthuo74/"><i class="fab fa-github fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/maureenthuo4aa27a149/"><i class="fab fa-linkedin-in fa-2x"></i></a>
+        <a href="https://www.instagram.com/snucatn/"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://twitter.com/thuo_maureen"><i class="fab fa-twitter fa-2x"></i></a>
+      </div>
+      <p class="text-center">
         &copy;2021.All Rights Reserved.&trade;<a href="index.html">Maureen Thuo</a>
       </p>
     </footer>

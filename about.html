@@ -1,5 +1,5 @@
 <!--/////////////////////////////>
-    Article: Portfolio About//
+    Article: Portfolio About   //
     Author : Maureen Thuo      //
     Date   : June 2021         //
     License: MIT               // 
@@ -9,8 +9,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <script src="./css/fontawesome.js" crossorigin="anonymous"></script>
 
     <title>Maureen Thuo: About</title>
@@ -18,36 +19,40 @@
   <body>
     <!--Navigation Bar Section-->
     <nav class="navbar">
-      <a href="" class="nav-link">MAUREEN THUO</a>
-       <div>
+      <a href="" class="nav-link">Maureen Thuo</a>
+    <div class="navbar-collapse">
+      <a href="./index.html" class="nav-link"><i class="fas fa-home"></i> Home</a> 
       <a href="./projects.html" class="nav-link"><i class="fas fa-tasks"></i> Projects</a>
       <a href="./services.html" class="nav-link"><i class="fas fa-cogs"></i> Services</a>
       <a href="./about.html" class="nav-link"><i class="fas fa-address-card"></i> About</a>
       <a href="./blog.html" class="nav-link"><i class="fas fa-blog"></i> Blog</a>
       <a href="./contact.html" class="nav-link"><i class="fas fa-envelope-open-text"></i> Contact</a>
       <a href="https://drive.google.com/file/d/1IFNBAMPP0G3S84wHaLagIxM3G6aFQv7v/view?usp=sharing" class="nav-link"><i class="fas fa-file"></i> Resume</a>
-       </div>
+    </div>
     </nav>
 
     <!--Jumbotron Section-->
-    <header>
+    <header class="container">
+      <img src="images/about.jpg" , width="300" height="300" alt="about image" />
+     
+     <div>
       <h1>Get to know me</h1>
       <p>Find out who I am, where I'm from and what I'm all about.</p>
+     </div>
     </header>
 
     <!--Main Section-->
     <main>
-      <h1>Changelog 1.0</h1>
+      <h2>Changelog 1.0</h2>
     <p>I have been designing logos for 3 years now. It started off as a hobby and decided to pursue it as a profession. I'm also a Microsoft Office Specialist who has gained several skills that made me competent in many aspects. </p>
 
     <p>I've worked with different design softwares and Microsoft office suite like Adobe Illustrator, Photoshop, InDesign, Microsoft Word, Microsoft Excel, Microsoft PowerPoint and Microsoft Access.</p>
-    <img src="images/about.jpg" , width="300" height="300" alt="about image" />
 
-    <h1>I've worked with</h1>
+    <h2>I've worked with</h2>
     <table border="1">
       <tr>
-        <td>Design</td>
-        <td>Microsoft</td>
+        <th>Design</th>
+        <th>Microsoft</th>
       </tr>
       <tr>
         <td>Adobe Illustrator </td>
@@ -68,19 +73,19 @@
    <tr>
      <td>3</td>
     <td>4</td>
- </tr>
-    </table> 
-    </main>
+   </tr>
+  </table> 
+ </main>
 
     <!--Footer Section-->
     <footer>
-      <ul>
-        <li><a href="https://github.com/maureenthuo74/"><i class="fab fa-github fa-2x"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/maureenthuo4aa27a149/"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
-        <li><a href="https://www.instagram.com/snucatn/"><i class="fab fa-instagram fa-2x"></i></a></li>
-        <li><a href="https://twitter.com/thuo_maureen"><i class="fab fa-twitter fa-2x"></i></a></li>
+      <ul class="social">
+        <li><a href="https://github.com/maureenthuo74/", target="_blank", class="nav-link"><i class="fab fa-github fa-2x"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/maureenthuo4aa27a149/", target="_blank", class="nav-link"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
+        <li><a href="https://www.instagram.com/snucatn/", target="_blank", class="nav-link"><i class="fab fa-instagram fa-2x"></i></a></li>
+        <li><a href="https://twitter.com/thuo_maureen", target="_blank", class="nav-link"><i class="fab fa-twitter fa-2x"></i></a></li>
       </ul>
-      <p>
+      <p class="text-center">
         &copy;2021.All Rights Reserved.&trade;<a href="index.html">Maureen Thuo</a>
       </p>
     </footer>
