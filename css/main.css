@@ -98,7 +98,7 @@ a {
 }
 
 main {
-  /* background: #fff url("../images/Astronaut.png") no-repeat; */
+  /* background: #fff */
   background-size: cover;
   width: 80vw;
   margin: 0 auto;
@@ -183,6 +183,7 @@ main {
   margin-left: auto;
   margin-right: auto;
 }
+
 .form-input {
   width: 100%;
   min-height: 2rem;
@@ -311,6 +312,14 @@ footer p {
     color: #091101;
   }
 
+  .navbar-toggler {
+    z-index: 2;
+    position: absolute;
+    right: 1em;
+    display: block;
+    transition: all 1s ease-out;
+  }
+  
   .hero {
     flex-direction: column-reverse;
   }
